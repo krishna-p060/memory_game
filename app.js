@@ -90,9 +90,10 @@ function displayTeacherInfo(teacherName) {
   audio.play();
   setTimeout(() => {
     audio.pause();
+    audio.currentTime = 0;
     centralTextBox.classList.remove('animate-central-text');
     modal.style.display = 'none';
-  }, 1000);
+  }, 1500);
   const teacherNameListElement = document.createElement('p');
   const teacherLink = document.createElement('a');
   nameAndPhoto.appendChild(teacherNameListElement);
